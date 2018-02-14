@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="900.0" maxWidth="601.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.fx.Controller">
+   <children>
+      <AnchorPane layoutY="185.0" prefHeight="597.0" prefWidth="601.0" style="-fx-background-color: #ff8f2d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="20.0" layoutY="58.0" prefHeight="39.0" prefWidth="127.0" text="Destinatario:" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameLabel" layoutX="146.0" layoutY="62.0" prefHeight="31.0" prefWidth="410.0" promptText="Nombre de usuario de CuriousCat" />
+            <TextArea fx:id="messageTextArea" layoutX="146.0" layoutY="120.0" prefHeight="200.0" prefWidth="410.0" promptText="Mensaje a spamear" />
+            <Label layoutX="20.0" layoutY="205.0" text="Mensaje:" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="348.0" text="Repeticiones:" AnchorPane.leftAnchor="21.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="repetitionsLabel" layoutX="146.0" layoutY="348.0" prefHeight="31.0" prefWidth="410.0" text="100" />
+            <Label layoutX="188.0" layoutY="400.0" text="Aproximacion (min):" />
+            <Button fx:id="comenzarButton" layoutX="50.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleComenzar" prefHeight="88.0" prefWidth="397.0" style="-fx-background-radius: 100; -fx-background-color: #e26f0b;" text="Empezar" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="aproximationLabel" contentDisplay="RIGHT" layoutX="321.0" layoutY="400.0" prefHeight="21.0" prefWidth="144.0" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="restantesLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="444.0" prefHeight="34.0" prefWidth="262.0" text="Place holder tet">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="214.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="191.0" fitWidth="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/curi.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="207.0" layoutY="73.0" prefHeight="88.0" prefWidth="351.0" text="S P A M M E R">
+               <font>
+                  <Font name="System Bold" size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -63,6 +63,12 @@ public class Controller {
 
     private boolean camposCorrectos() {
         try {
+            if (userNameLabel.getText().equals("")){
+                return false;
+            }
+            if (messageTextArea.getText().equals("")){
+                return false;
+            }
             Integer.parseInt(repetitionsLabel.getText());
             return true;
         } catch (Exception e) {

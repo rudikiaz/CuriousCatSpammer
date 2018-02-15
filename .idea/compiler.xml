@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpamBotCuriousCat" target="1.9" />
+      <module name="SpamBotCuriousCat" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

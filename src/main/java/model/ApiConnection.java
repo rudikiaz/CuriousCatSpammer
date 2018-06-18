@@ -11,13 +11,14 @@ public class ApiConnection {
 
 
     public String getId(String username) throws UnirestException {
-
-        HttpResponse<String> response = Unirest.get("https://api.curiouscat.me/v2/profile?username=" + username + "&count=30&min_timestamp=0")
+        HttpResponse<String> response = Unirest.get("https://curiouscat.me/api/v2/profile?username=" + username + "&count=30&min_timestamp=0")
                 .header("Cache-Control", "no-cache")
                 .header("Postman-Token", "6d8dea42-5cb0-9774-6ffc-1559f69941c2")
                 .asString();
         JSONObject json = new JSONObject(response.getBody());
-        return (String) json.get("id");
+        int id = (int) json.get("id");
+
+        return Integer.toString(id);
     }
 
    /* public static void main(String[] args) throws UnirestException, InterruptedException, IOException {
